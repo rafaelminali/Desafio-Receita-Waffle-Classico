@@ -1,43 +1,54 @@
+:root {
+    --backgroung-color: #eaeaea;
+    --recipe-background: #FFFFFF;
+    --title: #1B1B1B;
+    --image-footer: #8F8F8F;
+    --text: #39393a;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   }
+}
 body {
-    background: #eaeaea;
+    background: var(--backgroung-color);
     font-family: 'Roboto', sans-serif;
-    background-color: #EAEAEA;
-  }
+}
 main {
-    background: #FFFFFF;
+    width: 100vw;
+    padding: 30px 10px;
+}
+article {
+    background: var(--recipe-background);
+    width: 100%;
+    margin: 0 auto;
+    max-width: 800px;
     padding: 30px 20px;
-    margin: 20px auto;
-    max-width: 70%;
     border-radius: 10px;
 }
 h1 {
     font-size: 32px;
     text-align: center;
-    color: #1B1B1B;
+    color: var(--title);
     font-weight: 700;
 
 }
 h2 {
     font-size: 25px;
     text-align: center;
-    color: #1B1B1B;
+    color: var(--title);
     font-weight: 700;
     margin: 40px auto;
 }
 figcaption{
     font-size: 12px;
-    color: #8F8F8F;
+    color: var(--image-footer);
     text-align: right;
 }
 ul,
 ol {
     font-size: 16px;
-    color: #1B1B1B;
+    color: var(--text);
     font-weight: 400;
     line-height: 25px;
     list-style-position: inside;
@@ -56,15 +67,13 @@ figure {
 }
 p {
     font-size: 16px;
-    color: #1B1B1B;
+    color: var(--text);
     font-weight: 400;
     line-height: 25px;
     margin-bottom: 15px;
 }
-@media (max-width: 400px) {
-    main {
-        max-width: 85%;
-    }
+@media (max-width: 500px) {
+    
     ul,
     ol,
     p {
