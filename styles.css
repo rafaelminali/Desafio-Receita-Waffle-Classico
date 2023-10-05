@@ -1,23 +1,27 @@
 :root {
-    --backgroung-color: #eaeaea;
+    --background-color: #eaeaea;
     --recipe-background: #FFFFFF;
     --title: #1B1B1B;
     --image-footer: #8F8F8F;
     --text: #39393a;
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
-    background: var(--backgroung-color);
+    background: var(--background-color);
     font-family: 'Roboto', sans-serif;
 }
+
 main {
     width: 100vw;
     padding: 30px 10px;
 }
+
 article {
     background: var(--recipe-background);
     width: 100%;
@@ -26,6 +30,7 @@ article {
     padding: 30px 20px;
     border-radius: 10px;
 }
+
 h1 {
     font-size: 32px;
     text-align: center;
@@ -33,6 +38,7 @@ h1 {
     font-weight: 700;
 
 }
+
 h2 {
     font-size: 25px;
     text-align: center;
@@ -40,11 +46,13 @@ h2 {
     font-weight: 700;
     margin: 40px auto;
 }
+
 figcaption{
     font-size: 12px;
     color: var(--image-footer);
     text-align: right;
 }
+
 ul,
 ol {
     font-size: 16px;
@@ -53,18 +61,22 @@ ol {
     line-height: 25px;
     list-style-position: inside;
 }
+
 li {
     margin-bottom: 15px;
 }
+
 img {
     height: 250px;
     width: 100%;
     object-fit: cover;
     border-radius: 10px;
 }
+
 figure {
     margin: 40px 30px;
 }
+
 p {
     font-size: 16px;
     color: var(--text);
@@ -72,8 +84,8 @@ p {
     line-height: 25px;
     margin-bottom: 15px;
 }
+
 @media (max-width: 500px) {
-    
     ul,
     ol,
     p {
@@ -85,5 +97,4 @@ p {
     h2 {
         font-size: 20px;
     }
-
 }
